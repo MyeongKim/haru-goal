@@ -1,4 +1,3 @@
-hwatting.iml
-hwatting-core.iml
+*.iml
 /target
 /.idea
