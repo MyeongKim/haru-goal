@@ -1,12 +1,10 @@
 package hello;
 
+import hello.model.Goal;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -15,9 +13,16 @@ public class HelloController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String welcome(Map<String, Object> model) {
         model.put("period", 30);
+        return "welcome";
+    }
+
+    @PostMapping("/")
+    public String welcome(@ModelAttribute Goal goal, Map<String, Object> model) {
+        model.put("period", 30);
+        System.out.println(goal.toString());
         return "welcome";
     }
 

@@ -58,6 +58,10 @@
             vertical-align: middle;
         }
 
+        .modal-body {
+            overflow: hidden;
+        }
+
     </style>
 </head>
 <body>
@@ -155,20 +159,20 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form method="post">
                     <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">목표:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <label for="goal-title" class="col-form-label">목표:</label>
+                        <input type="text" name="title" class="form-control" id="goal-title">
                     </div>
                     <div class="form-group">
-                        <label for="message-text" class="col-form-label">달성 시 보상:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
+                        <label for="goal-compensation" class="col-form-label">달성 시 보상:</label>
+                        <textarea class="form-control" name="compensation" id="goal-compensation"></textarea>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                        <button type="submit" class="btn btn-primary">저장</button>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
-                <button type="button" class="btn btn-primary">저장</button>
             </div>
         </div>
     </div>
