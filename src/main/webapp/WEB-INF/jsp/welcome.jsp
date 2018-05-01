@@ -23,6 +23,7 @@
             height: 60px;
             line-height: 60px;
             background-color: #f5f5f5;
+            text-align: right;
         }
 
         .todolist {
@@ -58,8 +59,6 @@
 <div class="container">
 
     <div class="starter-template">
-        <%--<h2>Message: ${message}</h2>--%>
-
         <div class="row">
             <div class="col-md-12">
                 <div class="todolist not-done">
@@ -73,96 +72,11 @@
                             <div class="col-md-6 todo-calendar">
                                 <svg width="508" height="50" class="calendar-graph-svg">
                                     <g transform="translate(-18, 0)">
-                                        <g transform="translate(0, 0)">
-                                            <rect class="day" width="15" height="15" x="18" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
-                                        </g>
-                                        <g transform="translate(18, 0)">
-                                            <rect class="day" width="15" height="15" x="17" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-07"></rect>
-                                        </g>
-                                        <g transform="translate(36, 0)">
-                                            <rect class="day" width="15" height="15" x="16" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-14"></rect>
-                                        </g>
-                                        <g transform="translate(54, 0)">
-                                            <rect class="day" width="15" height="15" x="15" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-21"></rect>
-                                        </g>
-                                        <g transform="translate(72, 0)">
-                                            <rect class="day" width="15" height="15" x="14" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-28"></rect>
-                                        </g>
-                                        <g transform="translate(90, 0)">
-                                            <rect class="day" width="15" height="15" x="13" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-04"></rect>
-                                        </g>
-                                        <g transform="translate(108, 0)">
-                                            <rect class="day" width="15" height="15" x="12" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-11"></rect>
-                                        </g>
-                                        <g transform="translate(126, 0)">
-                                            <rect class="day" width="15" height="15" x="11" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-18"></rect>
-                                        </g>
-                                        <g transform="translate(144, 0)">
-                                            <rect class="day" width="15" height="15" x="10" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-25"></rect>
-                                        </g>
-                                        <g transform="translate(162, 0)">
-                                            <rect class="day" width="15" height="15" x="9" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(180, 0)">
-                                            <rect class="day" width="15" height="15" x="8" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(198, 0)">
-                                            <rect class="day" width="15" height="15" x="7" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(216, 0)">
-                                            <rect class="day" width="15" height="15" x="6" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(234, 0)">
-                                            <rect class="day" width="15" height="15" x="5" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(252, 0)">
-                                            <rect class="day" width="15" height="15" x="4" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(270, 0)">
-                                            <rect class="day" width="15" height="15" x="3" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(288, 0)">
-                                            <rect class="day" width="15" height="15" x="2" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(306, 0)">
-                                            <rect class="day" width="15" height="15" x="1" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(324, 0)">
-                                            <rect class="day" width="15" height="15" x="0" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(342, 0)">
-                                            <rect class="day" width="15" height="15" x="-1" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(360, 0)">
-                                            <rect class="day" width="15" height="15" x="-2" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(378, 0)">
-                                            <rect class="day" width="15" height="15" x="-3" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(396, 0)">
-                                            <rect class="day" width="15" height="15" x="-4" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(414, 0)">
-                                            <rect class="day" width="15" height="15" x="-5" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(432, 0)">
-                                            <rect class="day" width="15" height="15" x="-6" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(450, 0)">
-                                            <rect class="day" width="15" height="15" x="-7" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(468, 0)">
-                                            <rect class="day" width="15" height="15" x="-8" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(486, 0)">
-                                            <rect class="day" width="15" height="15" x="-9" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(504, 0)">
-                                            <rect class="day" width="15" height="15" x="-10" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(522, 0)">
-                                            <rect class="day" width="15" height="15" x="-11" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
+                                        <c:forEach begin="0" end="${period}" varStatus="loop">
+                                            <g transform="translate(${(loop.index-1) * 18}, 0)">
+                                                <rect class="day" width="15" height="15" x="${18-loop.index-1}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
+                                            </g>
+                                        </c:forEach>
                                     </g>
                                 </svg>
                             </div>
@@ -174,96 +88,11 @@
                             <div class="col-md-6 todo-calendar">
                                 <svg width="508" height="50" class="calendar-graph-svg">
                                     <g transform="translate(-18, 0)">
-                                        <g transform="translate(0, 0)">
-                                            <rect class="day" width="15" height="15" x="18" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
-                                        </g>
-                                        <g transform="translate(18, 0)">
-                                            <rect class="day" width="15" height="15" x="17" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-07"></rect>
-                                        </g>
-                                        <g transform="translate(36, 0)">
-                                            <rect class="day" width="15" height="15" x="16" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-14"></rect>
-                                        </g>
-                                        <g transform="translate(54, 0)">
-                                            <rect class="day" width="15" height="15" x="15" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-21"></rect>
-                                        </g>
-                                        <g transform="translate(72, 0)">
-                                            <rect class="day" width="15" height="15" x="14" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-28"></rect>
-                                        </g>
-                                        <g transform="translate(90, 0)">
-                                            <rect class="day" width="15" height="15" x="13" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-04"></rect>
-                                        </g>
-                                        <g transform="translate(108, 0)">
-                                            <rect class="day" width="15" height="15" x="12" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-11"></rect>
-                                        </g>
-                                        <g transform="translate(126, 0)">
-                                            <rect class="day" width="15" height="15" x="11" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-18"></rect>
-                                        </g>
-                                        <g transform="translate(144, 0)">
-                                            <rect class="day" width="15" height="15" x="10" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-25"></rect>
-                                        </g>
-                                        <g transform="translate(162, 0)">
-                                            <rect class="day" width="15" height="15" x="9" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(180, 0)">
-                                            <rect class="day" width="15" height="15" x="8" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(198, 0)">
-                                            <rect class="day" width="15" height="15" x="7" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(216, 0)">
-                                            <rect class="day" width="15" height="15" x="6" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(234, 0)">
-                                            <rect class="day" width="15" height="15" x="5" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(252, 0)">
-                                            <rect class="day" width="15" height="15" x="4" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(270, 0)">
-                                            <rect class="day" width="15" height="15" x="3" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(288, 0)">
-                                            <rect class="day" width="15" height="15" x="2" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(306, 0)">
-                                            <rect class="day" width="15" height="15" x="1" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(324, 0)">
-                                            <rect class="day" width="15" height="15" x="0" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(342, 0)">
-                                            <rect class="day" width="15" height="15" x="-1" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(360, 0)">
-                                            <rect class="day" width="15" height="15" x="-2" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(378, 0)">
-                                            <rect class="day" width="15" height="15" x="-3" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(396, 0)">
-                                            <rect class="day" width="15" height="15" x="-4" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(414, 0)">
-                                            <rect class="day" width="15" height="15" x="-5" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(432, 0)">
-                                            <rect class="day" width="15" height="15" x="-6" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(450, 0)">
-                                            <rect class="day" width="15" height="15" x="-7" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(468, 0)">
-                                            <rect class="day" width="15" height="15" x="-8" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(486, 0)">
-                                            <rect class="day" width="15" height="15" x="-9" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(504, 0)">
-                                            <rect class="day" width="15" height="15" x="-10" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(522, 0)">
-                                            <rect class="day" width="15" height="15" x="-11" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
+                                        <c:forEach begin="0" end="${period}" varStatus="loop">
+                                            <g transform="translate(${(loop.index-1) * 18}, 0)">
+                                                <rect class="day" width="15" height="15" x="${18-loop.index-1}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
+                                            </g>
+                                        </c:forEach>
                                     </g>
                                 </svg>
                             </div>
@@ -275,96 +104,11 @@
                             <div class="col-md-6 todo-calendar">
                                 <svg width="508" height="50" class="calendar-graph-svg">
                                     <g transform="translate(-18, 0)">
-                                        <g transform="translate(0, 0)">
-                                            <rect class="day" width="15" height="15" x="18" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
-                                        </g>
-                                        <g transform="translate(18, 0)">
-                                            <rect class="day" width="15" height="15" x="17" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-07"></rect>
-                                        </g>
-                                        <g transform="translate(36, 0)">
-                                            <rect class="day" width="15" height="15" x="16" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-14"></rect>
-                                        </g>
-                                        <g transform="translate(54, 0)">
-                                            <rect class="day" width="15" height="15" x="15" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-21"></rect>
-                                        </g>
-                                        <g transform="translate(72, 0)">
-                                            <rect class="day" width="15" height="15" x="14" y="0" fill="#ebedf0" data-count="0" data-date="2017-05-28"></rect>
-                                        </g>
-                                        <g transform="translate(90, 0)">
-                                            <rect class="day" width="15" height="15" x="13" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-04"></rect>
-                                        </g>
-                                        <g transform="translate(108, 0)">
-                                            <rect class="day" width="15" height="15" x="12" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-11"></rect>
-                                        </g>
-                                        <g transform="translate(126, 0)">
-                                            <rect class="day" width="15" height="15" x="11" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-18"></rect>
-                                        </g>
-                                        <g transform="translate(144, 0)">
-                                            <rect class="day" width="15" height="15" x="10" y="0" fill="#ebedf0" data-count="0" data-date="2017-06-25"></rect>
-                                        </g>
-                                        <g transform="translate(162, 0)">
-                                            <rect class="day" width="15" height="15" x="9" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(180, 0)">
-                                            <rect class="day" width="15" height="15" x="8" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(198, 0)">
-                                            <rect class="day" width="15" height="15" x="7" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(216, 0)">
-                                            <rect class="day" width="15" height="15" x="6" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(234, 0)">
-                                            <rect class="day" width="15" height="15" x="5" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(252, 0)">
-                                            <rect class="day" width="15" height="15" x="4" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(270, 0)">
-                                            <rect class="day" width="15" height="15" x="3" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(288, 0)">
-                                            <rect class="day" width="15" height="15" x="2" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(306, 0)">
-                                            <rect class="day" width="15" height="15" x="1" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(324, 0)">
-                                            <rect class="day" width="15" height="15" x="0" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(342, 0)">
-                                            <rect class="day" width="15" height="15" x="-1" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(360, 0)">
-                                            <rect class="day" width="15" height="15" x="-2" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(378, 0)">
-                                            <rect class="day" width="15" height="15" x="-3" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(396, 0)">
-                                            <rect class="day" width="15" height="15" x="-4" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(414, 0)">
-                                            <rect class="day" width="15" height="15" x="-5" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(432, 0)">
-                                            <rect class="day" width="15" height="15" x="-6" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(450, 0)">
-                                            <rect class="day" width="15" height="15" x="-7" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(468, 0)">
-                                            <rect class="day" width="15" height="15" x="-8" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(486, 0)">
-                                            <rect class="day" width="15" height="15" x="-9" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(504, 0)">
-                                            <rect class="day" width="15" height="15" x="-10" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
-                                        <g transform="translate(522, 0)">
-                                            <rect class="day" width="15" height="15" x="-11" y="0" fill="#c6e48b" data-count="1" data-date="2017-07-02"></rect>
-                                        </g>
+                                        <c:forEach begin="0" end="${period}" varStatus="loop">
+                                            <g transform="translate(${(loop.index-1) * 18}, 0)">
+                                                <rect class="day" width="15" height="15" x="${18-loop.index-1}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
+                                            </g>
+                                        </c:forEach>
                                     </g>
                                 </svg>
                             </div>
