@@ -5,6 +5,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Access the bootstrap Css like this,
         Spring boot will handle the resource mapping automcatically -->
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -30,8 +31,31 @@
             overflow: hidden;
         }
 
-        .todo-calendar{
+        .todo-calendar {
             text-align: center;
+        }
+
+        .todo-title {
+            line-height: 15px;
+        }
+
+        .modal {
+            text-align: center;
+            padding: 0!important;
+        }
+
+        .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -4px;
+        }
+
+        .modal-dialog {
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
         }
 
     </style>
@@ -63,7 +87,7 @@
             <div class="col-md-12">
                 <div class="todolist not-done">
                     <h3>하루 목표</h3>
-                    <button class="btn-add-to-do">+</button>
+                    <button class="btn-add-to-do" data-toggle="modal" data-target="#exampleModal">+</button>
                     <ul id="sortable" class="list-unstyled">
                         <li class="ui-state-default">
                             <div class="col-md-6 todo-title">
@@ -73,8 +97,8 @@
                                 <svg width="508" height="50" class="calendar-graph-svg">
                                     <g transform="translate(-18, 0)">
                                         <c:forEach begin="0" end="${period}" varStatus="loop">
-                                            <g transform="translate(${(loop.index-1) * 18}, 0)">
-                                                <rect class="day" width="15" height="15" x="${18-loop.index-1}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
+                                            <g transform="translate(${loop.index * 18}, 0)">
+                                                <rect class="day" width="15" height="15" x="${18-loop.index}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
                                             </g>
                                         </c:forEach>
                                     </g>
@@ -89,8 +113,8 @@
                                 <svg width="508" height="50" class="calendar-graph-svg">
                                     <g transform="translate(-18, 0)">
                                         <c:forEach begin="0" end="${period}" varStatus="loop">
-                                            <g transform="translate(${(loop.index-1) * 18}, 0)">
-                                                <rect class="day" width="15" height="15" x="${18-loop.index-1}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
+                                            <g transform="translate(${loop.index * 18}, 0)">
+                                                <rect class="day" width="15" height="15" x="${18-loop.index}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
                                             </g>
                                         </c:forEach>
                                     </g>
@@ -105,8 +129,8 @@
                                 <svg width="508" height="50" class="calendar-graph-svg">
                                     <g transform="translate(-18, 0)">
                                         <c:forEach begin="0" end="${period}" varStatus="loop">
-                                            <g transform="translate(${(loop.index-1) * 18}, 0)">
-                                                <rect class="day" width="15" height="15" x="${18-loop.index-1}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
+                                            <g transform="translate(${loop.index * 18}, 0)">
+                                                <rect class="day" width="15" height="15" x="${18-loop.index}" y="0" fill="#c6e48b" data-count="11" data-date="2017-04-30"></rect>
                                             </g>
                                         </c:forEach>
                                     </g>
@@ -118,8 +142,39 @@
             </div>
         </div>
     </div>
-
 </div>
+
+<%--목표 추가 모달--%>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">새 목표 추가하기</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">목표:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">달성 시 보상:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary">저장</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%--footer--%>
 <footer class="footer">
     <div class="container">
         <span class="text-muted">Haru-goal 에 대해</span>
