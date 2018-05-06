@@ -26,4 +26,9 @@ public class HelloController {
         return "welcome";
     }
 
+    @GetMapping("/move")
+    public String move() {
+        return "move";
+    }
+
 }

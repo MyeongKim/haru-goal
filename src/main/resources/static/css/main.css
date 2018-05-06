@@ -1,11 +1,18 @@
 body{
     background-color:#EEEEEE;
 }
-.todolist{
+.todolist, .move{
     background-color:#FFF;
     padding:20px 20px 10px 20px;
     margin-top:30px;
+    overflow: hidden;
 }
+
+.col:not(:first-child),.col:not(:last-child) {
+    padding-right:7px;
+    padding-left:7px;
+}
+
 .todolist h3{
     margin:0;
     padding-bottom:20px;
